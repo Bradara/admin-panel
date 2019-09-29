@@ -24,7 +24,7 @@ module.exports = (app) => {
     if (req.user) {
       res.locals.currentUser = req.user
     }
-
+    res.locals.path = req.path
     next()
   })
 
