@@ -17,7 +17,8 @@ User.init({
     firstName: {type: Sequelize.STRING},
     salt: Sequelize.STRING,
     hashedPass: Sequelize.STRING,
-    role: Sequelize.STRING}, {
+    role: {type: Sequelize.STRING, defaultValue: 'User'}}, 
+    {
       sequelize,
       modelName: 'user'
     })
