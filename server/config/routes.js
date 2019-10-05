@@ -4,8 +4,8 @@ const auth = require('./auth')
 module.exports = (app) => {
   app.get('/', controllers.home.index)
   app.get('/about', auth.isAuthenticated, controllers.home.about)
-  app.get('/channels/view', auth.isAuthenticated, controllers.channels.channelsGet)
-  app.get('/channels/add', auth.isAuthenticated, controllers.channels)
+  app.get('/channels/view', auth.isAuthenticated, controllers.channels.channelsGet) // NEW
+  app.get('/channels/add', auth.isAuthenticated, controllers.channels) //NEW
 
   app.get('/users/register', controllers.users.registerGet)
   app.post('/users/register', controllers.users.registerPost)
