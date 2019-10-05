@@ -34,7 +34,7 @@ module.exports = {
   loginPost: (req, res) => {
     let reqUser = req.body
     User
-      .findOne({where: {username: reqUser.username }}).then(user => {
+      .findOne({ where: { username: reqUser.username } }).then(user => {
         if (!user) {
           res.locals.globalError = 'Invalid user data'
           res.render('users/login')
@@ -47,13 +47,14 @@ module.exports = {
           return
         }
 
+
         req.logIn(user, (err, user) => {
           if (err) {
             res.locals.globalError = err
             res.render('users/login')
             return
           }
-
+          req.user = user
           res.redirect('/')
         })
       })

@@ -1,7 +1,12 @@
 const Channel = require('../data/Channel')
 
 module.exports = {
-    channelsGet: (req, res) => {
-       let Channels = Channel.findAll()
+    get: (req, res) => {
+       let channels = Channel.findAll()
+       res.locals.channels = channels
+       res.render('channels/view')
+    },
+    add: (req, res) => {
+        res.render('channels/add')
     }
 }
