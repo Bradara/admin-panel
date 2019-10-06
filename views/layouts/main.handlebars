@@ -35,11 +35,11 @@
       </li>
      
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    {{!-- <form class="form-inline my-2 my-lg-0"> --}}
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">{{currentUser.username}}</a>
           <form id="logout-form" action="/users/logout" method="POST"></form>
           <a class="nav-link" href="javascript:document.getElementById('logout-form').submit()">Logout</a>
-    </form>
+    {{!-- </form> --}}
   </div>
 </nav>
       {{/if}}
