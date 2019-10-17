@@ -1,5 +1,10 @@
-<h1> Channels: </h1>
+<h1 class="jumbotron"> Channels: </h1>
+<ul class="nav">
 {{#each channels}}
-<h2><a href="/channel/{{name}}">{{name}}</a>
-</h2>
+    <li class="nav-item">
+        <i class="nc-icon nc-notes"></i>
+        <a class="list-group-item nav-link" href="/channel/{{name}}">{{name}}</a>
+    </li>
+
 {{/each}}
+</ul>
