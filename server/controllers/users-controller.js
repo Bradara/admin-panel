@@ -54,7 +54,7 @@ module.exports = {
             res.render('users/login')
             return
           }
-          req.user = user
+
           res.redirect('/')
         })
       })
