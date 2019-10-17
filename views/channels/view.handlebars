@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 class="jumbotron"> Channels: </h1>
 <ul class="nav">
 {{#each channels}}
@@ -8,3 +9,39 @@
 
 {{/each}}
 </ul>
+=======
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card strpied-tabled-with-hover">
+                    <div class="card-header ">
+                        <h4 class="card-title">Existing Channels</h4>
+                        <p class="card-category">Here you can see all existing channels</p>
+                    
+                    <div class="card-body table-full-width table-responsive">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <th>Name</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{#each channels}}
+                                        <a href="/channel/{{name}}">{{name}}</a>
+                                        {{/each}}
+                                    </td>
+                                </tr>
+                        </tbody>
+                  </table>
+             </div>
+         </div>
+     </div>
+ </div>
+ <td>
+     <!--OLD VIEW -->
+    <h1> Channels: </h1>
+{{#each channel}}
+<h2><a href="/channel/{{name}}">{{name}}</a>
+</h2>
+{{/each}}
+>>>>>>> dbd2c3d9289874139370f8ef4b2d176ac02bfc79
