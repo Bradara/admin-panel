@@ -29,5 +29,4 @@ Channel.sync().then( () => {
 }).catch( err => {
     console.log(err)
 })
-
 module.exports = Channel

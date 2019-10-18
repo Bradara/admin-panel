@@ -1,0 +1,106 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card strpied-tabled-with-hover">
+                    <div class="card-header ">
+                        <h4 class="card-title">Edit Channel</h4>
+                        <p class="card-category">Here you can Edit Channel {{name}}</p>
+                    
+                    <div class="card-body table-full-width table-responsive">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <form action="/channels/add" method="POST">
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="name" id="name" placeholder="Channel Name">
+                                            </div>
+                                        </div>
+                                    <div class="form-group row">
+                                        <label for="inputTimeout" class="col-sm-2 col-form-label">Timeout:</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" name="timeout" id="timeout" placeholder="Set Timeout">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputHttp" class="col-sm-2 col-form-label">Input http:</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="input_http" id="input_http" placeholder="Input http:">
+                                                </div>
+                                            </div>
+                                             <div class="form-group row">
+                                                <label for="inputUdp" class="col-sm-2 col-form-label"> Input udp:</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="input_udp" id="input_udp" placeholder="Input udp:">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="inputFile" class="col-sm-2 col-form-label">Input file:</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="input_file" id="input_file" placeholder="Input file:">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="inputPnr" class="col-sm-2 col-form-label">Input pnr:</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="number" name="input_pnr" id="input_pnr" placeholder="Input prn:">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="inputFilter" class="col-sm-2 col-form-label">Input filter:</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="number" name="input_filter" id="input_filter" placeholder="Input filter:">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label for="outputHttp" class="col-sm-2 col-form-label">Output http:</label>
+                                                                <div class="col-sm-10">
+                                                                    <input type="text" name="output_http" id="output_http" placeholder="Output http::">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label for="outputUdp" class="col-sm-2 col-form-label">Output udp:</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" name="output_udp" id="output_udp" placeholder="Output udp:">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="mapPmt" class="col-sm-2 col-form-label">Map pmt:</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="number" name="map_pmt" id="map_pmt" placeholder="Map pmt:">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label for="mapVideo" class="col-sm-2 col-form-label">Map video:</label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="number" name="map_video" id="map_video" placeholder="Map video:">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label for="mapAudio" class="col-sm-2 col-form-label">Map audio:</label>
+                                                                                <div class="col-sm-10">
+                                                                                    <input type="number" name="map_audio" id="map_audio" placeholder="Map audio:">
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                    <label for="enableChannel" class="col-sm-2 col-form-label">Enable Channel:</label>
+                                                                                    <div class="col-sm-10">
+                                                                                     Enable: <input type="checkbox" name="enable" id="enable" checked>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                    <div class="col-sm-10">
+                                                                                    <button class="btn btn-primary" type="submit"value="Submit">Create</button>
+                                                                                    </div>
+                                                                             </div>
+                            </form>
+                            </thead>
+                            </table>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>                                                    

@@ -10,6 +10,9 @@ module.exports = {
   },
   channelsAdd:(req,res) =>{
     res.render('/channels/add')
+  },
+  channelsEdit:(req,res) =>{
+    res.render('/channels/edit')
   }
 
 }

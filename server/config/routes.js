@@ -14,6 +14,7 @@ module.exports = (app) => {
   app.get('/channels/add', auth.isAuthenticated, controllers.channels.add)
   app.get('/channels/view', auth.isAuthenticated, controllers.channels.get)
   app.post('/channels/add', auth.isAuthenticated, controllers.channels.create)
+  app.get('/channels/edit', auth.isAuthenticated, controllers.channels.edit)
 
   app.all('*', (req, res) => {
     res.status(404)

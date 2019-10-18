@@ -35,5 +35,9 @@ module.exports = {
             res.locals.globalError = err
             res.render('channels/add')
         })
+    },
+    edit: (req, res) => {
+        res.render('channels/edit')
     }
+
 }

@@ -1,4 +1,4 @@
-{{!-- <<<<<<< HEAD
+{{!--<<<<<<< HEAD
 <h1 class="jumbotron"> Channels: </h1>
 <ul class="nav">
 {{#each channels}}
@@ -18,37 +18,54 @@
                     <div class="card-header ">
                         <h4 class="card-title">Existing Channels</h4>
                         <p class="card-category">Here you can see all existing channels</p>
-                    
-                    <div class="card-body table-full-width table-responsive">
-                        <table class="table table-hover table-striped">
-                            <thead>
-                                <th>Name</th>
-                            </thead>
-                            <tbody>
+
+                        <div class="card-body table-full-width table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <th>Channel Name</th>
+                                    <th>Status - Start / Stop / Restart</th>
+                                    <th>Refresh Info</th>
+                                    <th>Edit</th>
+                                    <th>Screen</th>
+                                </thead>
+                                <tbody>
                                 {{#each channels}}
-                                <tr>
-                                    <td>
-                                        <a href="/channel/{{name}}">{{name}}</a>
+                                    <tr>
+                                        <td>
+                                            <a href="/channel/{{name}}">{{name}}</a>
+
+                                        </td>
+                                        <td>
                                        
-                                    </td>
-                                </tr>
+                                     <!-- //TODO if channel status is enable = return string "ON-AIR"-->
+                                            <p style="color:green;">ON-AIR <button type="button" class="btn btn-success">Start</button> <button type="button" class="btn btn-danger">Stop</button> <button type="button" class="btn btn-info">Restart</button></p>
+                                     
+                                      <!-- //TODO if channel status is disable = return string "OFF-AIR"-->
+                                            <p style="color:red;">OFF-AIR  <button type="button" class="btn btn-success">Start</button> <button type="button" class="btn btn-danger">Stop</button> <button type="button" class="btn btn-info">Restart</button></p>
+                                       
+
+                                        </td>
+                                                <td>
+                                                <a href="#">Refresh</a>
+
+                                                </td>
+                                                <td>
+                                                    <a href="/channels/edit">Edit</a>
+
+                                                </td>
+                                                <td>
+                                                    
+                                                        <img src="../images/off-air.jpg" width="140px" height="80px">
+
+                                                    </td>
+                                                </tr>
                                  {{/each}}
-                        </tbody>
-                  </table>
-             </div>
-         </div>
-     </div>
- </div>
- <td>
-     <!--OLD VIEW -->
-    <h1 class="jumbotron"> Channels: </h1>
-
-<ul class="nav">
-{{#each channels}}
-    <li class="nav-item">
-        <i class="nc-icon nc-notes"></i>
-        <a class="list-group-item nav-link" href="/channel/{{name}}">{{name}}</a>
-    </li>
-
-{{/each}}
->>>>>>> dbd2c3d9289874139370f8ef4b2d176ac02bfc79
+                                 
+                               
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <td>
