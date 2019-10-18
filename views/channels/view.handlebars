@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+{{!-- <<<<<<< HEAD
 <h1 class="jumbotron"> Channels: </h1>
 <ul class="nav">
 {{#each channels}}
@@ -9,7 +9,7 @@
 
 {{/each}}
 </ul>
-=======
+======= --}}
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -25,12 +25,14 @@
                                 <th>Name</th>
                             </thead>
                             <tbody>
+                                {{#each channels}}
                                 <tr>
-                                    <td>{{#each channels}}
+                                    <td>
                                         <a href="/channel/{{name}}">{{name}}</a>
-                                        {{/each}}
+                                       
                                     </td>
                                 </tr>
+                                 {{/each}}
                         </tbody>
                   </table>
              </div>
@@ -39,9 +41,14 @@
  </div>
  <td>
      <!--OLD VIEW -->
-    <h1> Channels: </h1>
-{{#each channel}}
-<h2><a href="/channel/{{name}}">{{name}}</a>
-</h2>
+    <h1 class="jumbotron"> Channels: </h1>
+
+<ul class="nav">
+{{#each channels}}
+    <li class="nav-item">
+        <i class="nc-icon nc-notes"></i>
+        <a class="list-group-item nav-link" href="/channel/{{name}}">{{name}}</a>
+    </li>
+
 {{/each}}
 >>>>>>> dbd2c3d9289874139370f8ef4b2d176ac02bfc79
