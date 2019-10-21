@@ -29,58 +29,64 @@
                                     <th>Screen</th>
                                 </thead>
                                 <tbody>
-                                {{#each channels}}
+                                    {{#each channels}}
                                     <tr>
                                         <td>
                                             <a href="/channel/{{name}}">{{name}}</a>
 
                                         </td>
                                         <td>
-                                       
-                                     <!-- //TODO if statemant to check channel status enable = "true" return string "ON-AIR"-->
-                                         <div class="row">
-                                             <div class="col-md-6">
-                                             <div class="row"><li style="color:green;">ON-AIR
-                                             <button type="button" class="btn btn-danger">Stop</button> 
-                                             <button type="button" class="btn btn-info">Restart</button>
-                                             </li>
-                                             </div>
-                                             </div>
-                                        </div>
-                                        <br/>
-                                     
-                                      <!-- //TODO if statement channel status is enable = "false" return string "OFF-AIR"-->
-                                             <div class="row">
-                                             <div class="col-md-6">
-                                             <div class="row"><li style="color:red;">OFF-AIR
-                                             <button type="button" class="btn btn-success">Start</butto>
-                                             </li>
-                                             </div>
-                                             </div>
-                                        </div>
+
+                                            <!-- //TODO if statemant to check channel status enable = "true" return string "ON-AIR"-->
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <li style="color:green;">ON-AIR
+                                                            <button type="button" class="btn btn-danger">Stop</button>
+                                                            <button type="button" class="btn btn-info">Restart</button>
+                                                        </li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br />
+
+                                            <!-- //TODO if statement channel status is enable = "false" return string "OFF-AIR"-->
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <li style="color:red;">OFF-AIR
+                                                            <button type="button" class="btn btn-success">Start</butto>
+                                                        </li>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                         </td>
-                                                <td>
-                                                <a href="#">Refresh</a>
+                                        <td>
+                                            <a href="#">Refresh</a>
 
-                                                </td>
-                                                <td>
-                                                    <a href="/channels/edit/{{name}}">Edit</a>
+                                        </td>
+                                        <td>
+                                            <a href="/channels/edit/{{name}}">Edit</a>
 
-                                                </td>
-                                                <td>
-                                                    
-                                                        <img src="../images/off-air.jpg" width="140px" height="80px">
+                                        </td>
+                                        <td>
 
-                                                    </td>
-                                                </tr>
-                                 {{/each}}
-                                 
-                               
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                                            <img src="../images/off-air.jpg" width="140px" height="80px">
+
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+
+
+                                </tbody>
+                            </table>
                         </div>
-                        <td>
+                    </div>
+                </div>
+            </div>
+            <td>
+            </td>
+        </div>
+    </div>
+</div>
